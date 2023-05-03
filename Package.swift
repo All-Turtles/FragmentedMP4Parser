@@ -9,7 +9,7 @@ let package = Package(
       .library(name: "FragmentedMP4Parser", targets: ["FragmentedMP4Parser"]),
     ],
     dependencies: [
-      .package(url: "../FragmentedMP4Description", .branch("master"))
+      .package(url: "https://github.com/All-Turtles/FragmentedMP4Description", .branch("master"))
     ],
     targets: [
         .target(name: "FragmentedMP4Parser", dependencies: ["FragmentedMP4Description"]),

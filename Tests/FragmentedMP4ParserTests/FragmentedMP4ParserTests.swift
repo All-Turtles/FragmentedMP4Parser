@@ -62,7 +62,7 @@ class FragmentedMP4ParserTests: XCTestCase {
         XCTAssertEqual(mediaInfo.averageBitRate, 615_381)
         XCTAssertEqual(mediaInfo.iFramePeakBitRate, 177_252)
         XCTAssertEqual(mediaInfo.iFrameAverageBitRate, 31_348)
-        XCTAssertEqual(mediaInfo.audioCodec, "mp4a.40.2")
+        XCTAssertEqual(mediaInfo.audioCodec, "mp4a")
         XCTAssertEqual(mediaInfo.videoCodec, "avc1.4D400D")
         XCTAssertEqual(mediaInfo.resolution.width, 320)
         XCTAssertEqual(mediaInfo.resolution.height, 240)
@@ -72,7 +72,7 @@ class FragmentedMP4ParserTests: XCTestCase {
 
     func testHEVCMediaInfo() {
         let mediaInfo = hevcContainer.mediaInfo
-        XCTAssertEqual(mediaInfo.audioCodec, "mp4a.40.2")
+        XCTAssertEqual(mediaInfo.audioCodec, "mp4a")
         XCTAssertEqual(mediaInfo.videoCodec, "hev1.1.6000000.L60.90")
         XCTAssertEqual(mediaInfo.resolution.width, 320)
         XCTAssertEqual(mediaInfo.resolution.height, 240)
